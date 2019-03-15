@@ -60,6 +60,7 @@
 		AA5766FA2160EFE50029F786 /* NewsTableViewCellOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5766F92160EFE50029F786 /* NewsTableViewCellOld.swift */; };
 		AA5766FD2160F0C10029F786 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5766FC2160F0C10029F786 /* NewsViewController.swift */; };
 		AA5766FF2160F2CD0029F786 /* New.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5766FE2160F2CD0029F786 /* New.swift */; };
+		D91DB13C223C2235002F726E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91DB13B223C2235002F726E /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +120,7 @@
 		AA5766FE2160F2CD0029F786 /* New.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = New.swift; sourceTree = "<group>"; };
 		B1F60E259C4E88A48D0AC259 /* Pods-homeWork_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeWork_1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-homeWork_1/Pods-homeWork_1.debug.xcconfig"; sourceTree = "<group>"; };
 		CE1F4887F01F3E518C13D6ED /* Pods-homeWork_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-homeWork_1.release.xcconfig"; path = "Pods/Target Support Files/Pods-homeWork_1/Pods-homeWork_1.release.xcconfig"; sourceTree = "<group>"; };
+		D91DB13B223C2235002F726E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		FB03EE607AE3B19FD932EA7A /* Pods_homeWork_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_homeWork_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -274,6 +276,7 @@
 				84D1DEB821AD5F16006FC20E /* service */,
 				AA5766D62160A6F90029F786 /* storyboards */,
 				AA5766CF2160A5AF0029F786 /* Info.plist */,
+				D91DB13B223C2235002F726E /* Constants.swift */,
 			);
 			path = homeWork_1;
 			sourceTree = "<group>";
@@ -586,6 +589,7 @@
 				84EC564A21A2A2DB00C8542C /* VkFeed.swift in Sources */,
 				8424E55C2177401700188E61 /* CustomNavigationController.swift in Sources */,
 				AA5766FA2160EFE50029F786 /* NewsTableViewCellOld.swift in Sources */,
+				D91DB13C223C2235002F726E /* Constants.swift in Sources */,
 				8442ABB021957D2D003DDA6A /* RealmWorker.swift in Sources */,
 				AA5766EC2160B5A10029F786 /* FriendInfoViewController.swift in Sources */,
 				840110E021EC364C0044AEB7 /* TestViewController.swift in Sources */,

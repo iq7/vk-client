@@ -30,7 +30,7 @@ class CustomIndicator: UIActivityIndicatorView {
         } else {
             mainView.frame = CGRect(x: 0, y: (self.frame.height - self.frame.width) / 2, width: self.frame.width, height: self.frame.width)
         }
-        mainView.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.1)
+        mainView.backgroundColor = Constants.Colors.CustomIndicatorBackgroundColor
         mainView.cornerRadius = 5//mainView.frame.width/2
         
         // Длина и высота круга
@@ -64,9 +64,9 @@ class CustomIndicator: UIActivityIndicatorView {
         circle2.layer.cornerRadius = circleSize / 2
         circle3.layer.cornerRadius = circleSize / 2
        
-        circle1.backgroundColor = UIColor.lightGray
-        circle2.backgroundColor = UIColor.lightGray
-        circle3.backgroundColor = UIColor.lightGray
+        circle1.backgroundColor = Constants.Colors.circleBackgroundColor
+        circle2.backgroundColor = Constants.Colors.circleBackgroundColor
+        circle3.backgroundColor = Constants.Colors.circleBackgroundColor
         
         mainView.addSubview(circle1)
         mainView.addSubview(circle2)

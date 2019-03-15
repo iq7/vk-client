@@ -48,20 +48,20 @@ class MainGroupViewController: UIViewController {
     
     
     private func setSegmentedControlSettings() {
-        segmentedControl.backgroundColor = UIColor.vkColor.main
-        segmentedControl.tintColor = .clear
+        segmentedControl.backgroundColor = Constants.Colors.main
+        segmentedControl.tintColor = Constants.Colors.segmentedControlTintColor
         
-        let fontNormal = UIFont(name: "HelveticaNeue", size: 17) ?? UIFont()
-        let fontSelect = UIFont(name: "HelveticaNeue-Medium", size: 17) ?? UIFont()
+        let fontNormal = Constants.Fonts.segmentedControlFont
+        let fontSelect = Constants.Fonts.segmentedControlSelectFont
     
         segmentedControl.setTitleTextAttributes([
             NSAttributedStringKey.font: fontNormal,
-            NSAttributedStringKey.foregroundColor: UIColor.lightGray
+            NSAttributedStringKey.foregroundColor: Constants.Colors.segmentedControlForegroundColor
             ], for: .normal)
         
         segmentedControl.setTitleTextAttributes([
             NSAttributedStringKey.font: fontSelect,
-            NSAttributedStringKey.foregroundColor: UIColor.white
+            NSAttributedStringKey.foregroundColor: Constants.Colors.segmentedControlForegroundSelectedColor
             ], for: .selected)
         
     }

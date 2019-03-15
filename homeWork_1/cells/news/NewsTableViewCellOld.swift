@@ -51,10 +51,10 @@ class NewsTableViewCellOld: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imageViewLike.tintColor = UIColor.lightGray
-        imageViewShare.tintColor = UIColor.lightGray
-        imageViewComment.tintColor = UIColor.lightGray
-        imageViewViews.tintColor = UIColor.lightGray
+        imageViewLike.tintColor = Constants.Colors.iconColor
+        imageViewShare.tintColor = Constants.Colors.iconColor
+        imageViewComment.tintColor = Constants.Colors.iconColor
+        imageViewViews.tintColor = Constants.Colors.iconColor
     }
     
     
@@ -104,7 +104,7 @@ class NewsTableViewCellOld: UITableViewCell {
         labelComment.text = feed.getStringFrom(count: feed.countComments)
         
 //        buttonLike.setupView(isLiked: feed.isLiked, countLikes: feed.countLikes)
-//        imageComment.tintColor = UIColor.lightGray
+//        imageComment.tintColor = Constants.iconColor
 //        labelCountViews.text = getStringFrom(count: feed.countViews)
         
     }

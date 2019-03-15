@@ -59,11 +59,11 @@ import UIKit
              labelCount.text = ""
         }
         if isLiked {
-            imageView.tintColor = UIColor.red
-            labelCount.textColor = UIColor.red
+            imageView.tintColor = Constants.Colors.iconSelectedColor
+            labelCount.textColor = Constants.Colors.iconSelectedColor
         } else {
-            imageView.tintColor = UIColor.lightGray
-            labelCount.textColor = UIColor.lightGray
+            imageView.tintColor = Constants.Colors.iconColor
+            labelCount.textColor = Constants.Colors.iconColor
         }
     }
     

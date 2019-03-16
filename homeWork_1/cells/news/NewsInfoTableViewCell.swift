@@ -43,10 +43,10 @@ class NewsInfoTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        imageViewLike.tintColor = UIColor.lightGray
-        imageViewShare.tintColor = UIColor.lightGray
-        imageViewComment.tintColor = UIColor.lightGray
-        imageViewViews.tintColor = UIColor.lightGray
+        imageViewLike.tintColor = UIColor.icon
+        imageViewShare.tintColor = UIColor.icon
+        imageViewComment.tintColor = UIColor.icon
+        imageViewViews.tintColor = UIColor.icon
     }
     
     

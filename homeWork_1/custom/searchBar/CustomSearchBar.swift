@@ -27,7 +27,7 @@ class CustomSearchBar: UIView {
 
  
     func setSubViews(width: CGFloat) {
-        self.backgroundColor = Constants.Colors.main
+        self.backgroundColor = UIColor.main
         textField.delegate = self
         textField.frame = CGRect(x: 10, y: (self.frame.height - 40) / 2, width: width - 20, height: 40)
         buttonCancel.frame = CGRect(x: width, y: 8, width: 0, height: 40)
@@ -35,17 +35,17 @@ class CustomSearchBar: UIView {
         imageView.frame = CGRect(x: (width / 2) - 15, y: (self.frame.height / 2) - 15, width: 30, height: 30)
         
         buttonCancel.setTitle("Отмена", for: .normal)
-        buttonCancel.setTitleColor(Constants.Colors.SearchBarButtonCancelTitleColor, for: .normal)
+        buttonCancel.setTitleColor(UIColor.SearchBarButtonCancelTitle, for: .normal)
 //        buttonCancel.titleLabel?.font = Constants.Font.buttonCancelTitleFont
-        buttonCancel.backgroundColor = Constants.Colors.SearchBarButtonCancelBackgroundColor
+        buttonCancel.backgroundColor = UIColor.SearchBarButtonCancelBackground
         buttonCancel.cornerRadius = 5
         
         imageView.image = UIImage(named: "search")
         imageView.contentMode = .scaleAspectFit
-        imageView.tintColor = Constants.Colors.SearchBarIconColor
+        imageView.tintColor = UIColor.SearchBarIcon
         
-        textField.textColor = Constants.Colors.textFieldColor
-        textField.attributedPlaceholder = NSAttributedString(string: "Поиск...", attributes: [NSAttributedStringKey.foregroundColor: Constants.Colors.textFieldPlaceholderForegroundColor])
+        textField.textColor = UIColor.textField
+        textField.attributedPlaceholder = NSAttributedString(string: "Поиск...", attributes: [NSAttributedStringKey.foregroundColor: UIColor.textFieldPlaceholderForeground])
         
         self.addSubview(textField)
         self.addSubview(buttonCancel)

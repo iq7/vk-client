@@ -29,8 +29,8 @@ class LoginViewController: UIViewController {
     
     private func setCustoms() {
         let navigationBarAppearance = UINavigationBar.appearance()
-        navigationBarAppearance.tintColor = Constants.Colors.navigationBarTintColor
-        navigationBarAppearance.barTintColor = Constants.Colors.main
+        navigationBarAppearance.tintColor = UIColor.navigationBarTint
+        navigationBarAppearance.barTintColor = UIColor.main
     }
     
     

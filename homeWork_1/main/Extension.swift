@@ -114,4 +114,51 @@ extension CGFloat {
     }
 }
 
+extension UIColor {
+    static let icon = UIColor.lightGray
+    static let iconSelected = UIColor.red
+    static let main = UIColor.rgba(65, 107, 158, 1)
+    static let isMemberBackground = iconSelected
+    
+    static let navigationBarTint = UIColor.white
+    static let segmentedControlForeground = UIColor.lightGray
+    static let segmentedControlForegroundSelected = UIColor.white
+    static let segmentedControlTint = UIColor.clear
+    
+    static let CustomIndicatorBackground = UIColor.rgba(0, 0, 0, 0.1)
+    
+    static let circleBackground = UIColor.lightGray
+    
+    static let activityIndicatorMainViewBackground = UIColor.clear
+    static let activityIndicatorBackground = UIColor.rgba(24, 139, 243, 1)
+    static let activityIndicatorStroke = UIColor.rgba(238, 243, 251, 1)
+    static let activityIndicatorFill = UIColor.rgba(92, 175, 248, 1)
+    
+    static let SearchBarButtonCancelTitle = UIColor.white
+    static let SearchBarButtonCancelBackground = UIColor.red
+    static let SearchBarIcon = UIColor.white
+    
+    static let textField = UIColor.white
+    static let textFieldPlaceholderForeground = UIColor.groupTableViewBackground
 
+    static var cache: [String: UIColor] = [:]
+    
+    static func rgba(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat, _ a: CGFloat) -> UIColor {
+        let key = "r\(r)g\(g)b\(b)a\(a)"
+        if let cachedColor = self.cache[key] {
+            return cachedColor
+        }
+        let color = UIColor(red: r / 255.0, green: g / 255.0, blue: b / 255.0, alpha: a)
+        if self.cache.count > 500 {
+            self.cache = [:]
+        }
+        self.cache[key] = color
+        return color
+    }
+}
+
+extension UIFont {
+    static let segmentedControl = UIFont(name: "HelveticaNeue", size: 17) ?? UIFont()
+    static let segmentedControlSelect = UIFont(name: "HelveticaNeue-Medium", size: 17) ?? UIFont()
+    static let buttonCancelTitle = UIFont.boldSystemFont(ofSize: 16)
+}
